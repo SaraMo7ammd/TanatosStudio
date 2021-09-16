@@ -1,0 +1,628 @@
+/*Start our framework*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*Small*/
+
+@media(min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/*Medium*/
+
+@media(min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/*Large*/
+
+@media(min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.overlay {
+    background: rgba(49, 55, 61, 0.9);
+    height: 100%;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.table {
+    height: 100%;
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.text-center {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.main-color {
+    color: #f7600e;
+}
+
+.main-background {
+    background-color: #f7600e;
+}
+
+
+/*End our framework*/
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+
+/*Start header*/
+
+.header {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    color: #FFF;
+}
+
+.header .navbar {
+    overflow: hidden;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header .navbar .logo {
+    font-size: 24px;
+}
+
+.header .navbar .links {
+    float: right;
+}
+
+.header .navbar .links i {
+    margin-left: 5px;
+}
+
+.header .intro h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.header .intro p {
+    margin: 5px 0 40px;
+    line-height: 1.6;
+    font-size: 20px;
+    color: #e2e2e2;
+}
+
+.header .btn button {
+    background: transparent;
+    padding: 10px 0;
+    width: 180px;
+    font-size: 14px;
+    border: 1px solid #909090;
+    margin: 0 8px;
+    border-radius: 10px;
+    color: #FFF;
+    transition: all .5s ease-in-out;
+}
+
+.header .btn button:hover {
+    background: #f7600e;
+    cursor: pointer;
+}
+
+.header .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header .arrow i {
+    border: 2px solid #787878;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+}
+
+.header .arrow i:hover {
+    cursor: pointer;
+}
+
+
+/*End header*/
+
+
+/*Starts features*/
+
+.features {
+    padding: 80px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.features .box {
+    width: 22%;
+    float: left;
+    margin-right: 4%;
+}
+
+.features .box:last-child {
+    margin-right: 0;
+}
+
+.features .box i {
+    color: #f7600e;
+    border: 1px solid #CCC;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.features .box i:hover {
+    background-color: #f7600e;
+    color: #FFF;
+    border: 1px solid #f7600e;
+}
+
+.features .box h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #505050;
+}
+
+.features .box p {
+    line-height: 1.8;
+    color: #666;
+}
+
+
+/*End features*/
+
+
+/*Start subscribe*/
+
+.subscribe {
+    background-image: url('../img/subscribe.jpg');
+    background-size: cover;
+}
+
+.subscribe form {
+    padding: 100px 0;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.subscribe form input[type="email"] {
+    padding: 5px;
+    width: 320px;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    border: none;
+    height: 37px;
+    line-height: 37px;
+}
+
+.subscribe form button {
+    padding: 10px;
+    width: 200px;
+    border: 1px s;
+    background-color: #f7600e;
+    border: none;
+    color: #FFF;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+/*End subscribe*/
+
+
+/*Start out work*/
+
+.our-work {
+    padding: 100px;
+    margin: auto;
+}
+
+.our-work h2 {
+    font-weight: 500px;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.our-work p:first-child {
+    line-height: 1.8;
+    margin: 10px 0 40px;
+}
+
+.our-work .show-more {
+    background: transparent;
+    border: 1px solid #CCC;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #555;
+    transition: all .5s ease-in-out;
+}
+
+.our-work .show-more:hover {
+    background-color: #f7600e;
+    border: 1px solid #f7600e;
+    color: #FFF
+}
+
+.our-work .items-box {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.our-work .item {
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+
+.our-work .item img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.our-work .item .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 96, 14, .7);
+    color: #FFF;
+    border-radius: 10px;
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.our-work .item:hover .over {
+    display: block;
+}
+
+.our-work .item .over h4 {
+    font-size: 24 px;
+    margin-bottom: 0;
+}
+
+.our-work .over p {
+    margin-top: 30px;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.our-work .over button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #FFF;
+    transition: all .5s ease-in-out;
+}
+
+.our-work .over button:hover {
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    color: #f7600e;
+}
+
+
+/*End our work*/
+
+
+/*Start testimonial*/
+
+.testimonial {
+    background: url(../img/testimonial.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.testimonial .client {
+    padding: 50px 0;
+    color: #FFF;
+}
+
+.testimonial .client img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.testimonial .client p {
+    line-height: 1.8;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.testimonial .fa-chevron-right {
+    position: relative;
+    right: -450px;
+    top: -120px;
+    color: #999;
+    cursor: pointer;
+}
+
+.testimonial .fa-chevron-left {
+    position: relative;
+    left: -450px;
+    top: -120px;
+    color: #999;
+    cursor: pointer;
+}
+
+.testimonial .fa-chevron-right:hover,
+.testimonial .fa-chevron-left:hover {
+    color: #f7600e;
+}
+
+
+/*End testimonial*/
+
+
+/*Start our team*/
+
+.our-team {
+    padding: 80px;
+    margin: auto;
+}
+
+.our-team h2 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.our-team .main {
+    margin: 10px 0;
+    line-height: 1.8;
+    color: #505050;
+    font-size: 20px;
+}
+
+.our-team .the-team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.our-team .person {
+    margin: 1%;
+    text-align: center;
+    color: #888;
+}
+
+.our-team .the-team .person:hover img {
+    filter: none;
+    filter: grayscale(0);
+    -wibkit-filter: grayscale(0);
+}
+
+.our-team .the-team .person:hover {
+    color: #555;
+}
+
+.our-team .the-team .person:hover .fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.our-team .the-team .person:hover .fa-twitter {
+    background-color: #55acee;
+}
+
+.our-team .the-team .person:hover .fa-linkedin {
+    background-color: #0077b5;
+}
+
+.our-team .the-team .person img {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    filter: gray;
+    filter: grayscale(1);
+    -wibkit-filter: grayscale(1);
+}
+
+.our-team .the-team .person p {
+    font-size: 15px;
+}
+
+.our-team .the-team .social-icons i {
+    background-color: #888;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    border-radius: 50%;
+}
+
+
+/*End our team*/
+
+
+/*Start contact form*/
+
+.contact {
+    background: url(../img/contact.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.contact .overlay {
+    padding: 50px 0;
+    color: #FFF;
+}
+
+.contact .overlay .container {
+    display: block;
+}
+
+.contact h2 {
+    font-size: 35px;
+}
+
+.contact form {
+    width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"] {
+    width: 48%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.contact form input[type="text"] {
+    float: left;
+}
+
+.contact form input[type="email"] {
+    float: right;
+}
+
+.contact form textarea {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    background-color: transparent;
+    color: #fff;
+}
+
+.contact form input[type="text"]:focus,
+.contact form input[type="email"]:focus,
+.contact form textarea:focus {
+    outline: none;
+}
+
+.contact form .info {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.contact form .info button {
+    float: left;
+    background-color: #f7600e;
+    padding: 10px;
+    width: 200px;
+    border: 1px s;
+    border: none;
+    color: #FFF;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.contact form .info .form-icons {
+    float: right;
+}
+
+.contact form .info .form-icons i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+    border-radius: 50%;
+}
+
+.contact form .info .form-icons .fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.contact form .info .form-icons .fa-twitter {
+    background-color: #55acee;
+}
+
+.contact form .info .form-icons .fa-linkedin {
+    background-color: #0077b5;
+}
+
+
+/*End contact form*/
+
+
+/*Start footer*/
+
+.footer {
+    background-color: #3b434c;
+    color: #FFF;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.footer .copyright {
+    float: left;
+}
+
+.footer .design {
+    float: right;
+}
+
+
+/*End footer*/
